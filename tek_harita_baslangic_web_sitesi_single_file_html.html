@@ -1,0 +1,189 @@
+<!--
+Tek Harita - ADI-TEK Harita Mühendislik
+Güncelleme: Kullanıcının verdiği bilgilerle tek sayfa HTML
+Dosya: index.html
+NOT: Logo bu dosyada base64 olarak gömülü. Eğer ayrı dosya kullanmak istersen 'images/logo.jpeg' olarak kaydedip <img> src attribute'unu değiştir.
+-->
+
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ADI-TEK Harita Mühendislik — Mekânsal verinin uzmanları</title>
+  <meta name="description" content="ADI-TEK Harita Mühendislik — Harita ve kadastro hizmetleri: imar uygulamaları, kadastral çalışmalar, ölçüm ve 3B modelleme.">
+  <meta name="author" content="ADI-TEK Harita Mühendislik">
+  <meta property="og:title" content="ADI-TEK Harita Mühendislik">
+  <meta property="og:description" content="Mekânsal verinin uzmanları - İmar uygulamaları, parselasyon, kadastral ölçümler, 3B modelleme.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <style>
+    .hero-bg { background: linear-gradient(90deg,#06213a 0%,#0ea5a4 100%);} 
+    .glass { backdrop-filter: blur(6px); background: rgba(255,255,255,0.06);} 
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-slate-50">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40 bg-white/70 glass border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-3">
+        <div class="flex items-center gap-3">
+          <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsM" alt="Logo" style="width:56px;height:56px;object-fit:cover;border-radius:8px;"/>
+          <div class="hidden sm:block">
+            <div class="font-semibold">ADI-TEK Harita Mühendislik</div>
+            <div class="text-xs text-slate-600">Mekânsal verinin uzmanları</div>
+          </div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex gap-6 items-center">
+        <a href="#services" class="hover:text-emerald-600">Hizmetler</a>
+        <a href="#about" class="hover:text-emerald-600">Hakkımızda</a>
+        <a href="#contact" class="hover:text-emerald-600">İletişim</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#contact" class="hidden md:inline-block px-4 py-2 rounded-full bg-emerald-600 text-white text-sm">Teklif Al</a>
+        <button id="mobileBtn" class="md:hidden p-2 rounded-md hover:bg-slate-100">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero-bg text-white py-16">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-3xl md:text-4xl font-extrabold leading-tight">ADI-TEK Harita Mühendislik</h1>
+        <p class="mt-3 text-lg text-slate-100/90">Mekânsal verinin uzmanları — harita ve kadastroya dair tek adres.</p>
+
+        <div class="mt-5 flex gap-3">
+          <a href="#contact" class="px-5 py-3 rounded-md bg-white text-slate-900 font-semibold">Ücretsiz Teklif Al</a>
+          <a href="#services" class="px-5 py-3 rounded-md border border-white/40">Hizmetlerimiz</a>
+        </div>
+
+        <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm opacity-90">
+          <li>• İmar uygulamaları & parselasyon</li>
+          <li>• Kadastral harita ve parsel işlemleri</li>
+          <li>• TUS, numarataj, kat irtifak & mülkiyet</li>
+          <li>• 3B yapı modelleme ve yapı aplikasyonu</li>
+        </ul>
+      </div>
+
+      <div class="hidden md:block">
+        <div class="w-full h-64 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center">
+          <div class="text-center">
+            <svg width="220" height="140" viewBox="0 0 220 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="220" height="140" rx="12" fill="white" fill-opacity="0.04" />
+            </svg>
+            <div class="mt-3 text-slate-100/80">Proje görselleri daha sonra eklenecek</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-semibold">Hizmetlerimiz</h2>
+      <p class="mt-2 text-slate-600">Aşağıdaki hizmetleri profesyonel olarak sunuyoruz:</p>
+
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-6 bg-white rounded-xl shadow">
+          <h3 class="font-semibold">İmar Uygulamaları & Parselasyon</h3>
+          <p class="mt-2 text-sm text-slate-600">İmar uygulama süreçleri, ifraz-tevhid, yola terk ve yoldan ihdas işlemleri.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow">
+          <h3 class="font-semibold">Kadastral Harita & Parsel İşlemleri</h3>
+          <p class="mt-2 text-sm text-slate-600">Tapu işlemleri, aplikasyon, kadastral yenileme ve pafta hazırlığı.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow">
+          <h3 class="font-semibold">TUS, Numarataj & Kat İrtifak</h3>
+          <p class="mt-2 text-sm text-slate-600">Yapı adreslendirme, kat irtifakı, mülkiyet tescil işlemleri.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow">
+          <h3 class="font-semibold">3B Modelleme & Ölçüm Hizmetleri</h3>
+          <p class="mt-2 text-sm text-slate-600">Lidar / fotogrametri verisi işleme, 3B yapı modelleme, hassas ölçümler ve aplikasyon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-12 bg-slate-50">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-semibold">Hakkımızda</h2>
+      <p class="mt-4 text-slate-600">ADI-TEK Harita Mühendislik, Cihanbeyli merkezli olarak saha ve ofis işleriyle eksiksiz hizmet sunar. Doğru ölçüm, şeffaf raporlama ve zamanında teslimat ilkelerimizdir.</p>
+
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-4 bg-white rounded-xl shadow">
+          <h4 class="font-semibold">Kurucular</h4>
+          <p class="mt-2 text-sm text-slate-600">Sefa Naciye TEKELİOĞLU — 0507 028 28 96<br/>Sinan ADIGÜZEL — 0545 907 30 75</p>
+        </div>
+        <div class="p-4 bg-white rounded-xl shadow">
+          <h4 class="font-semibold">Ofis</h4>
+          <p class="mt-2 text-sm text-slate-600">Cumhuriyet Mahallesi, Otogar Caddesi No:8D, Cihanbeyli / KONYA</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-12">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <h2 class="text-2xl font-semibold">İletişim</h2>
+        <p class="mt-2 text-slate-600">Proje detayınızı yazın veya doğrudan arayın.</p>
+
+        <div class="mt-6 space-y-4">
+          <div>
+            <strong>Telefon</strong>
+            <div class="text-sm text-slate-600">Sefa Naciye: 0507 028 28 96<br/>Sinan: 0545 907 30 75</div>
+          </div>
+          <div>
+            <strong>E-posta</strong>
+            <div class="text-sm text-slate-600">aditekharita@gmail.com</div>
+          </div>
+          <div>
+            <strong>Instagram</strong>
+            <div class="text-sm text-slate-600"><a href="https://instagram.com/harita_muhendisi" target="_blank" class="text-emerald-600">@harita_muhendisi</a></div>
+          </div>
+
+          <a href="mailto:aditekharita@gmail.com?subject=Teklif%20Talebi" class="inline-block px-4 py-2 rounded-md bg-emerald-600 text-white">E-posta Gönder</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-semibold">Ofis Konumu</h3>
+        <p class="text-sm text-slate-600">Aşağıdaki harita ofisimizin konumunu gösterir.</p>
+        <div class="mt-4 w-full h-64 rounded-md overflow-hidden border">
+          <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://maps.app.goo.gl/71ZhwweTSUisZvvCA" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-6 bg-slate-900 text-slate-200">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div>
+        <div class="font-semibold">ADI-TEK Harita</div>
+        <div class="text-sm text-slate-400">© <span id="year"></span> Tüm hakları saklıdır.</div>
+      </div>
+      <div class="text-sm">
+        <a href="https://instagram.com/harita_muhendisi" target="_blank" class="mr-4 hover:underline">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const mobileBtn = document.getElementById('mobileBtn');
+    mobileBtn.addEventListener('click', () => {
+      alert('Mobil menü — istersen ben açılır mobil menü ekleyebilirim.');
+    });
+  </script>
+</body>
+</html>
